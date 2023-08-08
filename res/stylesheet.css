@@ -1,13 +1,6 @@
-@font-face {
-    font-family: "bitcell"
-    src local("bitcell"),
-        url("/res/bitcell_memesbruh03.woff"),
-        url("/res/bitcell_memesbruh03.ttf");
-}
-
 body {
     margin: 0;
-    font-family: bitcell, Arial, sans-serif;
+    font-family: Arial, sans-serif;
     background-color: #171717;
     color: #fff;
 }
