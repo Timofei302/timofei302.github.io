@@ -19,4 +19,34 @@ a {
 a:hover {
     color: #3b60a9;
 }
+a[href^="http://"]:not([href*="timofei302.github.io"]):after,
+a[href^="https://"]:not([href*="timofei302.github.io"]):after,
+a[href^="ftp://"]:not([href*="timofei302.github.io"]):after {
+	content: "" url('/res/icons/external.png');
+	padding-left:5px;
+}
+.abtn {
+    display: inline-block;
+    background: #404040;
+    color: #fff;
+    padding: 0.3rem 1rem;
+    text-decoration: none;
+    border-radius: 3px;
+    border-bottom: none;
+}
+.abtn:hover {
+    background: #363636;
+    border-bottom: none;
+    color: #fff;
+}
+.abtn:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px #565b67;
+    border-bottom: none;
+    color: #fff;
+}
+img {
+    border-radius: 7px;
+    max-width: 100%;
+}
 
