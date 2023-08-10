@@ -5,7 +5,10 @@ body {
     color: #fff;
 }
 .content div {
-    padding:.0em .4em .1em 1em;
+    padding:.0em 2.5% .1em 2.5%;
+}
+.content div p {
+    text-indent: 10px;
 }
 a {
     color: #4876d2;
