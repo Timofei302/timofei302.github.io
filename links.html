@@ -1,1 +1,65 @@
- 
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+        <title>Links - Timofei302's official website</title>
+        <meta name="description" content="Links to my social networks and not only."/>
+        <link rel="stylesheet" href="/res/stylesheet.css"/>
+        <script type="module" src='/res/html-include-element.js'></script>
+    </head>
+    <body>
+        <html-include src="/header.html"></html-include>
+        <noscript>Our site uses a script for include footer and header, and if the scripts are disabled, the site will be displayed incorrectly. Please add this site to the exceptions of the noscript plugin. We do not use scripts that may harm your privacy.</noscript>
+        <div class="content">
+            <div>
+                <h1 align=center>Links</h1>
+                
+                <script src="https://liberapay.com/Timofei302/widgets/receiving.js"></script>
+                <table>
+                  <tr>
+                    <td>LiberaPay</td><td><a href="https://liberapay.com/Timofei302/donate"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a></td>
+                  </tr>
+                  <tr>
+                    <td>DonatePay.ru</td><td><a href="https://new.donatepay.ru/@timofei302">LINK</a></td>
+                  </tr>
+                  <tr>
+                    <td>Mastodon</td><td><a rel="me" href="https://mastodon.ml/@timofei302"><img src="/res/icons/mastodon.svg" height="30px" style="background-color: #19a6fd; border-radius: 3px; padding: 0 5px 0 5px;"></a></td>
+                  </tr>
+                </table>
+            </div>
+        </div>
+        <style>
+          table {
+            margin: 0 auto;
+          }
+          table, tr, td {
+            table-layout: fixed;
+            width: 100%;
+            max-width: 600px;
+            border-collapse: collapse;
+            border: 3px solid;
+          }
+          td {
+            padding: 10px;
+          }
+          td a {
+              color: #4876d2;
+              text-decoration: none;
+              border-bottom: none;
+              cursor: pointer;
+          }
+          td a:hover {
+              color: #3b60a9;
+          }
+          td a[href^="http://"]:not([href*="timofei302.github.io"]):after,
+          td a[href^="https://"]:not([href*="timofei302.github.io"]):after,
+          td a[href^="ftp://"]:not([href*="timofei302.github.io"]):after {
+          	content: "";
+          }
+        </style>
+        <html-include src="/footer.html"></html-include>
+    </body>
+</html>
+
