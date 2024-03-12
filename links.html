@@ -10,10 +10,10 @@
         <script type="module" src='/res/html-include-element.js'></script>
     </head>
     <body>
-        <html-include src="/header.html"></html-include>
+        <html-include src="/header.html" no-shadow></html-include>
         <noscript>Our site uses a script for include footer and header, and if the scripts are disabled, the site will be displayed incorrectly. Please add this site to the exceptions of the noscript plugin. We do not use scripts that may harm your privacy.</noscript>
         <div class="content">
-            <div>
+            <div class="links_page">
                 <h1 align=center>Links</h1>
                 
                 <table>
@@ -90,17 +90,14 @@
           }
           td a:hover {
               color: #3b60a9;
-          }
-          td a[href^="http://"]:not([href*="timofei302.github.io"]):after,
-          td a[href^="https://"]:not([href*="timofei302.github.io"]):after,
-          td a[href^="ftp://"]:not([href*="timofei302.github.io"]):after {
-          	content: "";
+              text-decoration: none;
+              border-bottom: none;
           }
           .addtoyoursite tr td img {
           	border-radius: 0px;
           }
         </style>
-        <html-include src="/footer.html"></html-include>
+        <html-include src="/footer.html" no-shadow></html-include>
     </body>
 </html>
 

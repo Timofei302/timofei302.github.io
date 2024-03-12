@@ -2,15 +2,26 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #171717;
+    background: url(/img/bg.png);
     color: #fff;
 }
+body div, body html-include {
+    max-width: 800px;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+body .content {
+    background-color: #171717;
+}
 .content div {
-    padding:.0em 2.5% .1em 2.5%;
+    max-width: 790px;
+    margin: 0, auto, 0, auto;
 }
 .content div p {
     text-indent: 10px;
 }
-a {
+a:not(.footer_banners a, header p a, .links_page table tr td a, .abtn) {
     color: #4876d2;
     text-decoration: none;
     border-bottom: 1px dashed;
@@ -19,12 +30,7 @@ a {
 a:hover {
     color: #3b60a9;
 }
-a[href^="http://"]:not([href*="timofei302.github.io"]):after,
-a[href^="https://"]:not([href*="timofei302.github.io"]):after,
-a[href^="ftp://"]:not([href*="timofei302.github.io"]):after {
-	content: "" url('/res/icons/external.png');
-	padding-left:5px;
-}
+
 .abtn {
     display: inline-block;
     background: #404040;
@@ -46,7 +52,34 @@ a[href^="ftp://"]:not([href*="timofei302.github.io"]):after {
     color: #fff;
 }
 img {
-    border-radius: 7px;
+    border-radius: 3px;
     max-width: 100%;
 }
 
+header .links a {
+    display: inline-block;
+    background: #404040;
+    color: #fff;
+    padding: 0.3rem 1rem;
+    text-decoration: none;
+    border-radius: 3px;
+}
+header .links a:hover {
+    background: #363636;
+}
+
+header .links a:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px #565b67;
+}
+header {
+    padding: 0.5rem;
+    background-color: #252525;
+    border-bottom: 2px solid #006e12;
+}
+
+footer {
+    padding: 0.5rem;
+    background-color: #252525;
+    border-top: 2px solid #006e12;
+}
