@@ -31,32 +31,11 @@ a:not(.footer_banners a, header p a, .links_page table tr td a, .abtn) {
     border-bottom: 1px dashed;
     cursor: pointer;
 }
-.abtn {
-    display: inline-block;
-    background: #404040;
-    color: #fff;
-    padding: 0.3rem 1rem;
-    text-decoration: none;
-    border-radius: 3px;
-    border-bottom: none;
-}
-.abtn:hover {
-    background: #363636;
-    border-bottom: none;
-    color: #fff;
-}
-.abtn:focus {
-    outline: none;
-    box-shadow: 0 0 0 4px #565b67;
-    border-bottom: none;
-    color: #fff;
-}
 img {
     border-radius: 3px;
     max-width: 100%;
 }
-
-header .links a {
+.abtn, header .links a {
     display: inline-block;
     background: #404040;
     color: #fff;
@@ -64,11 +43,10 @@ header .links a {
     text-decoration: none;
     border-radius: 3px;
 }
-header .links a:hover {
+.abtn:hover, header .links a:hover {
     background: #363636;
 }
-
-header .links a:focus {
+.abtn:focus, header .links a:focus {
     outline: none;
     box-shadow: 0 0 0 4px #565b67;
 }
@@ -78,7 +56,6 @@ header {
     border-bottom: 2px solid #006e12;
     box-shadow: 0px 1px 40px 0px #006e12;
 }
-
 footer {
     padding: 0.5rem;
     background-color: #252525;
