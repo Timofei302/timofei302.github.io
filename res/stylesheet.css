@@ -30,10 +30,6 @@ a:not(.footer_banners a, header p a, .links_page table tr td a, .abtn) {
     border-bottom: 1px dashed;
     cursor: pointer;
 }
-a:hover {
-    color: #3b60a9;
-}
-
 .abtn {
     display: inline-block;
     background: #404040;
