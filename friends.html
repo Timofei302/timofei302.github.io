@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+        <title>Friends - Timofei302's official website</title>
+        <meta name="description" content="Timofei302's Friends"/>
+        <link rel="stylesheet" href="/res/stylesheet.css"/>
+        <script type="module" src='/res/html-include-element.js'></script>
+    </head>
+    <body>
+        <html-include src="/header.html" no-shadow></html-include>
+        <noscript>Our site uses a script for include footer and header, and if the scripts are disabled, the site will be displayed incorrectly. Please add this site to the exceptions of the noscript plugin. We do not use scripts that may harm your privacy.</noscript>
+        <div class="content">
+            <div>
+                <h1 align=center>Friends</h1>
+                <div class="friends"> 
+                    <img src="/img/avatars/lgrn.jpg">
+                    <h2>LGRN Arts</h2>
+                    <p>An independent character who loves to draw and complain about his difficult life.</p>
+                    <a class="abtn" href="https://lgrn-arts.ru/" target="_blank">Website</a>
+                    <br style="clear:both">
+                    <!--<hr/>-->
+
+                    <!--<img src="/img/avatars/placeholder.png">
+                    <h2>Placeholder</h2>
+                    <p>Text</p>
+                    <a class="abtn" href="https://example.com" target="_blank">Website</a>
+                    <br style="clear:both">
+                    <hr/>-->
+                </div>
+            </div>
+        </div>
+        <style>
+            .friends {
+                width: 100%;
+                height: content;
+                margin: 0 0 30px 0;
+            }
+            .friends hr {
+                border: none;
+                color: #006e12;
+                background-color: #006e12; 
+                height: 2px;
+                margin: 30px 0;
+            }
+            .friends img {
+                height: 135px;
+                border: 2px solid #00470c;
+                border-radius: 10px;
+                box-shadow: 0px 1px 30px 0px #006e12;
+                margin: 0 20px 0 0;
+            }
+            .friends img:nth-of-type(even) {
+                transform: rotate(5deg);
+                float: left;
+            }
+            .friends img:nth-of-type(odd) {
+                transform: rotate(-5deg);
+                float: right;
+            }
+
+        </style>
+        <html-include src="/footer.html" no-shadow></html-include>
+    </body>
+</html>

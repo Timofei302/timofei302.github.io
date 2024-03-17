@@ -3,50 +3,64 @@ body {
     font-family: Arial, sans-serif;
     background-color: #171717;
     color: #fff;
+    display: block;
+}
+body .content, body html-include {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+}
+body .content {
+    padding: .5em 0 1em 0;
+    background-color: #171717;
+    box-shadow: 0px 1px 40px 0px #006e12;
 }
 .content div {
-    padding:.0em 2.5% .1em 2.5%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 790px;
+    min-width: 90%
 }
 .content div p {
     text-indent: 10px;
 }
-a {
+a:not(.footer_banners a, header p a, .links_page table tr td a, .abtn) {
     color: #4876d2;
     text-decoration: none;
     border-bottom: 1px dashed;
     cursor: pointer;
 }
-a:hover {
-    color: #3b60a9;
+img {
+    border-radius: 3px;
+    max-width: 100%;
 }
-a[href^="http://"]:not([href*="timofei302.github.io"]):after,
-a[href^="https://"]:not([href*="timofei302.github.io"]):after,
-a[href^="ftp://"]:not([href*="timofei302.github.io"]):after {
-	content: "" url('/res/icons/external.png');
-	padding-left:5px;
-}
-.abtn {
+.abtn, header .links a {
     display: inline-block;
     background: #404040;
     color: #fff;
     padding: 0.3rem 1rem;
     text-decoration: none;
     border-radius: 3px;
-    border-bottom: none;
 }
-.abtn:hover {
+.abtn:hover, header .links a:hover {
     background: #363636;
-    border-bottom: none;
-    color: #fff;
 }
-.abtn:focus {
+.abtn:focus, header .links a:focus {
     outline: none;
     box-shadow: 0 0 0 4px #565b67;
-    border-bottom: none;
-    color: #fff;
 }
-img {
-    border-radius: 7px;
-    max-width: 100%;
+header {
+    padding: 0.5rem;
+    background-color: #252525;
+    border-bottom: 2px solid #006e12;
+    box-shadow: 0px 1px 40px 0px #006e12;
 }
-
+footer {
+    padding: 0.5rem;
+    background-color: #252525;
+    border-top: 2px solid #006e12;
+    border-radius: 0 0 15px 15px;
+    box-shadow: 0px 1px 40px 0px #006e12;
+    margin-bottom: 1.5em;
+}
